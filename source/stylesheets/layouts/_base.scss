@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+    font-family: 'Lato', sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
