@@ -1,7 +1,60 @@
-.text-bold {
-  font-weight: 700;
+.bg-grey {
+  background-color: $light-grey;
 }
 
-.bg-dark-green {
-  background: $dark-green;
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-food {
+  background-color: $food;
+}
+
+.bg-blue {
+  background-color: $blue; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-orange {
+  color: $orange;
+}
+.text-yellow {
+  color: $fashion;
+}
+.text-blue {
+  color: $blue;
+}
+
+.container {
+  padding: 0 100px;
+}
+
+.section-padding {
+  padding: 30px 0px;
+}
+
+.big-section-padding {
+  padding: 70px 0px;
+}
+
+.line {
+  height: 2px;
+  width: 20px;
+  margin: auto;
+  &.blue {
+    background-color: $blue;
+  }
+  &.orange {
+    background-color: $orange;
+  }
+  &.big-line {
+    height: 4px;
+  }
 }
