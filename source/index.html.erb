@@ -31,16 +31,16 @@ title: Les éthiquetés - Tribus de marques et créateurs résistants
       <div class="square bg-white">
         <div>
           <div class="line blue"></div>
-          <p>Un Concept Store parisien <br>100% responsable et durable.</p>
+          <p class="text-blue">Un Concept Store parisien <br>100% responsable et durable.</p>
           <div class="line blue"></div>
         </div>
       </div>
-      <div class="square bg-food">
-        <span>#food</span>
+      <div class="square" style="background-image: url(<%= image_path 'categories.gif' %>)">
+        
       </div>
     </div>
     <div class="button-container">
-      <a href="#" class="btn-blue">Je veux être informé</a>
+      <a href="#newsletter" class="btn-blue">Je veux être informé</a>
     </div>
   </div>
 </div>
@@ -71,20 +71,47 @@ title: Les éthiquetés - Tribus de marques et créateurs résistants
   </div>
 </div>
 
-<div class="big-section-padding bg-blue newsletter text-center">
+<div class="big-section-padding bg-blue text-white newsletter text-center" id="newsletter">
   <div class="container">
-    <h2>Vous êtes intéressé ?</h2>
+    <h2 class="text-white">Vous êtes intéressé ?</h2>
     <p>Vous souhaitez être informé du lancement ?  Laissez nous votre email !</p>
+    
+
     <div class="form-container">
+      <!-- Begin Mailchimp Signup Form -->
+
+      <form action="https://blbrd.us11.list-manage.com/subscribe/post?u=86980aaa64ed73b68719ba09e&amp;id=0db2f44253" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <div class="form-inputs">
+          <input type="email" value="" name="EMAIL" placeholder="Votre email" class="required email" id="mce-EMAIL">
+          <input type="submit" value="Rester informé" name="subscribe" class="button">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_86980aaa64ed73b68719ba09e_0db2f44253" tabindex="-1" value=""></div>    
+        </div>
+        <div class="form-confirm">
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        </div>
+
+      </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      <!--End mc_embed_signup-->
+
+
+
+<!--     <div class="form-container">
       <form action="">
         <input type="email" placeholder="Votre email">
         <input type="submit" value="Rester informé">
       </form>
-    </div>
+    </div> -->
   </div>
 </div>
 
-<div class="big-section-padding products text-center">
+<div class="section-padding products text-center bg-grey">
   <div class="container">
     <h2>Qu’est ce qu’on y trouve ?</h2>
     <div class="line big-line orange"></div>
@@ -92,18 +119,48 @@ title: Les éthiquetés - Tribus de marques et créateurs résistants
       Plus la peine de courir ici et là pour acheter ses vêtements, ses cosmétiques ou encore les affaires des enfants. Dans la boutique Les éthiquetés, vous trouverez à la fois des baskets stylés, des tampons super clean, de jolis vêtements de grossesse, du thé et des tisanes bio, des jouets pour enfant… bref quasiment tout ce dont vous avez besoin !
     </p>
     <h4 class="text-yellow">Et tout cela, en version éthique, pour correspondre au mieux à vos valeurs</h4>
+    
+
+  </div>
+  <div class="products-container">
+    <div class="product" style="background-image: url(<%= image_path 'beauty.png' %> );">
+      <div class="product-hover">
+        <h3>Beauty</h3>
+      </div>
+    </div>
+    <div class="product" style="background-image: url(<%= image_path 'fashion.png' %> );">
+      <div class="product-hover">
+        <h3>Fashion</h3>
+      </div>
+    </div>
+    <div class="product" style="background-image: url(<%= image_path 'food.png' %> );">
+      <div class="product-hover">
+        <h3>Food</h3>
+      </div>
+    </div>
+    <div class="product" style="background-image: url(<%= image_path 'home.png' %> );">
+      <div class="product-hover">
+        <h3>Home</h3>
+      </div>
+    </div>
+    <div class="product" style="background-image: url(<%= image_path 'kids.png' %> );">
+      <div class="product-hover">
+        <h3>Kids</h3>
+      </div>
+    </div>
+    <div class="product" style="background-image: url(<%= image_path 'stationery.png' %> );">
+      <div class="product-hover">
+        <h3>Stationery</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container hashtags">
+    <h2>#ECOLOGIQUES #DURABLES #MADEINFRANCE #ZERODECHET #COMMERCEEQUITABLE #BIO #VEGAN</h2>
   </div>
 </div>
 
-
-
-
-<div class="container">
-  <div>
-
-    <p>Coming Soon</p>
-
-    <br><br>
+<div class="footer bg-orange">
+  <div class="container">
     <div class="icons">
       <a href="https://www.facebook.com/Lesethiquetes/" target="_blank" class="icon-container">
         <div class="icon">
@@ -115,9 +172,11 @@ title: Les éthiquetés - Tribus de marques et créateurs résistants
           <i class="fa fa-instagram"></i>
         </div>
       </a>
+      <a href="mailto:myriam@lesethiquetes.fr">
+        <div class="icon">
+          <i class="fa fa-envelope"></i>
+        </div>
+      </a>
     </div>
-    <br><br>
-    <%= mail_to "myriam@lesethiquetes.fr", "myriam@lesethiquetes.fr" %>
-
   </div>
 </div>
